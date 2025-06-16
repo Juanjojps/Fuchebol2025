@@ -44,8 +44,6 @@ public class Main extends Application {
     
     public Stage primaryStage;
     
-    
-
     public Stage getPrimaryStage() {
 		return primaryStage;
 	}
