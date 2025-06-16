@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controleitor.ClubController" stylesheets="@application.css" prefWidth="Infinity" prefHeight="Infinity">
+    <top>
+        <VBox spacing="10" alignment="TOP_CENTER" style="-fx-padding: 10;">
+            <Label text="Mi club" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+            <TextField fx:id="filtroTextField" promptText="Filtrar por nombre..." 
+                       onKeyReleased="#filtrarJugadores" />
+        </VBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <GridPane fx:id="jugadoresGrid" hgap="10" vgap="10" style="-fx-padding: 10;" 
+                      alignment="TOP_CENTER" />
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <HBox style="-fx-padding: 10;" alignment="BOTTOM_LEFT">
+            <Button fx:id="volverButton" text="⟵ Volver" />
+        </HBox>
+    </bottom>
+</BorderPane>
