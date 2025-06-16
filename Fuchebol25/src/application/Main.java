@@ -36,7 +36,7 @@ public class Main extends Application {
     public static void main(String[] args) throws SQLException {
     	accesoDatos=new AccesoDatos();
     	accesoDatos.setConnection();
-        
+    	clube = new Club();
         // Start JavaFX application
         launch(args);  
         
