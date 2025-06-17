@@ -91,6 +91,12 @@ public class Main extends Application {
         primaryStage.show();
     }
     
+    /**
+     * Muestra la pantalla de los sobres.
+     * 
+     * @throws IOException Si hay error al cargar el archivo FXML
+     */
+    
     public void mostrarPantallaSobres() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/PantallaSobres.fxml"));
         Parent root = loader.load();
@@ -102,6 +108,12 @@ public class Main extends Application {
         primaryStage.setFullScreen(true);
         primaryStage.setFullScreenExitHint("");
     }
+    
+    /**
+     * Muestra la pantalla del club (jugadores que tenemos).
+     * 
+     * @throws IOException Si hay error al cargar el archivo FXML
+     */
     
     public void mostrarPantallaClub() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/PantallaClub.fxml"));
